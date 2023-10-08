@@ -1,5 +1,53 @@
 import Image from 'next/image'
 
+const Satellite = () => {
+  const data = [
+    {
+      satelliteName: 'Hubble Space Telescope',
+      owner: 'NASA (National Aeronautics and Space Administration)',
+      country: 'USA',
+      orbitalPlane: 'Low Earth Orbit (LEO)',
+      height: '547 km',
+      position: '39.5515° N, 105.1427° W',
+      timestamp: '2023-10-08 10:00:00',
+      incidentType: 'Observation Mission'
+    },
+    {
+      satelliteName: 'ISS (International Space Station)',
+      owner: 'Multiple international space agencies (e.g., NASA, Roscosmos, ESA)',
+      country: 'International (collaboration of various countries)',
+      orbitalPlane: 'Low Earth Orbit (LEO)',
+      height: '400 km',
+      position: '51.6741° N, 0.3700° W',
+      timestamp: '2023-10-09 14:30:00',
+      incidentType: 'Space Research'
+    },
+    {
+      satelliteName: 'Landsat 8',
+      owner: 'NASA (National Aeronautics and Space Administration)',
+      country: 'USA',
+      orbitalPlane: 'Polar Sun-Synchronous Orbit (SSO)',
+      height: '705 km',
+      position: '98.2° W',
+      timestamp: '2023-10-10 08:15:00',
+      incidentType: 'Earth Observation'
+    },
+    {
+      satelliteName: 'Galileo Navigation System',
+      owner: 'European Union and European Space Agency (ESA)',
+      country: 'Multiple European countries',
+      orbitalPlane: 'Medium Earth Orbit (MEO)',
+      height: '23,222 km',
+      position: 'Various positions in MEO',
+      timestamp: '2023-10-11 16:45:00',
+      incidentType: 'Navigation and Positioning'
+    },
+    // Add more data as needed
+  ];
+
+  // Rest of the code remains the same
+};
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
@@ -45,7 +93,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-        <div className="overflow-x-auto">
+{/*         <div className="overflow-x-auto">
           <table className="min-w-full border border-gray-300">
             <thead>
               <tr>
@@ -60,7 +108,7 @@ export default function Home() {
               </tr>
             </thead>
             <tbody>
-              {data.map((satellite, index) => (
+              {Satellite.map((satellite, index) => (
                 <tr key={index}>
                   <td className="py-2 px-4 border-b">{satellite.satelliteName}</td>
                   <td className="py-2 px-4 border-b">{satellite.owner}</td>
@@ -74,7 +122,7 @@ export default function Home() {
               ))}
             </tbody>
           </table>
-        </div>
+        </div> */}
           <h2 className={`mb-3 text-2xl font-semibold`}>
             Docs{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
@@ -82,7 +130,7 @@ export default function Home() {
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
+            Find in-depth information about AuroTrigger and APIs.
           </p>
         </a>
 
@@ -99,7 +147,7 @@ export default function Home() {
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
+            Learn about the initiative and our Open Data philosophy!
           </p>
         </a>
 
@@ -110,13 +158,13 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
+            Prediction model{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
+            Explore the Sources and methos Next.js 13 playground.
           </p>
         </a>
 
